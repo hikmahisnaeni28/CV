@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Modern</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+
+        .content {
+            display: flex;
+            padding: 20px;
+        }
+
+        .sidebar {
+            width: 30%;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-right: 2px solid #e9ecef;
+        }
+
+        .main-content {
+            width: 70%;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .contact-info ul,
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-info ul li,
+        .skills ul li {
+            margin-bottom: 10px;
+        }
+
+        .skills ul li span {
+            display: inline-block;
+            width: 80%;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .skills ul li span::after {
+            content: '';
+            display: block;
+            width: var(--level, 50%);
+            height: 100%;
+            background-color: #007bff;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .experience,
+        .education {
+            line-height: 1.6;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f8f9fa;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .sidebar,
+            .main-content {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="header">
+            <h1>Hikmah Isnaeni</h1>
+            <p>Web Developer | Designer | Problem Solver</p>
+            <h5><p>Senang belajar hal baru dan berosientasi detail serta memiliki aspirasi di bidang teknologi</p></h5>
+        </div>
+
+        <div class="content">
+            <div class="sidebar">
+                <div class="section contact-info">
+                    <h2>Contact</h2>
+                    <ul>
+                        <li>hikmahisnaeni28@gmail.com</li>
+                        <li>+62 821 3922 8353</li>
+                        <li>@hikmaa.yaa</li>
+                    </ul>
+                </div>
+
+     
+
+
+                <div class="section skills">
+                    <h2>Kemampuan </h2>
+                    <ul>
+                        <li>Kemampuan Analitis <span style="--level: 90%;"></span></li>
+                        <li>Adaptasi perubahan <span style="--level: 80%;"></span></li>
+                        <li>Menejemen waktu <span style="--level: 75%;"></span></li>
+                        <li>Berkomunikasi dengan baik <span style="--level: 85%;"></span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="section experience">
+                    <h2>Pengalaman</h2>
+                    <p><strong>Membuat websites berbasis HTML/CSS</strong> di tahun 2024</p>
+                    <p>Pengembangan antarmuka yang ramah pengguna .</p>
+
+                    <p><strong>Membuat game dan aplikasi berbasis Android</strong> di tahun 2024 - 2025</p>
+                    <p>Game yang dibuat untuk melestarikan budaya indonesia dengan tetap menjaga daya tariknya </p>
+                </div>
+
+                <div class="section education">
+                    <h2>Pendidikan</h2>
+                    <p><strong>Rekayasa Perangkat Lunak</strong> - SMK Negeri 1 Wonosobo</p>
+                    <p>dengan fokus pada pengembangan web dan rekayasa perangkat lunak.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Hikmah Isnaeni.</p>
+        </div>
+    </div>
+</body>
+</html>
